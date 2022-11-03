@@ -48,6 +48,22 @@ export async function getSearchToken() {
   return token;
 }
 
+const analyticsClientMiddleware = (eventName:string, payload:any) => { 
+  // if (payload.visitorId == "") { 
+  //   payload.customData['loggedIn'] = false
+  // }
+  let emails = "";
+  if(CONTEXT_DATA !==null && CONTEXT_DATA.length > 0 && typeof PROFILE_SELECTED === 'string'){
+    emails =  JSON.parse(CONTEXT_DATA).filter((item : any)=>{
+      return item.name === JSON.parse(PROFILE_SELECTED);
+    })[0].email;
+  }
+
+  payload.customData['email'] = emails
+  return payload;
+};
+
+
 export async function initializeHeadlessEngine() {
   return buildSearchEngine({
     configuration: {
@@ -55,6 +71,9 @@ export async function initializeHeadlessEngine() {
       organizationId: process.env.REACT_APP_ORGANIZATION_ID!,
       accessToken: await getSearchToken(),
       renewAccessToken: getSearchToken,
+      analytics: {
+        analyticsClientMiddleware 
+      },
       search :{
         searchHub : process.env.REACT_APP_SEARCH_HUB!,
         pipeline: process.env.REACT_APP_SEARCH_ENGINE_PIPELINE!

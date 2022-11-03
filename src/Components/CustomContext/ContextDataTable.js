@@ -149,20 +149,17 @@ bottom: 20px;
 padding: 8px 16px;
 width: 100px;
 height: 40px;
-background-color: ${Theme.button};
+background-color: ${Theme.primaryText};
 border-radius: 8px;
 font-family: inherit;
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
 line-height: 24px;
-color: #FFFFFF;
+color: rgb(255, 255, 255);
 border: none;
 cursor: pointer;
-transition: 0.2s ease-in-out;
-&:hover {
-    background-color: ${Theme.button}CC;
-}
+transition: all 0.2s ease-in-out 0s;
 `
 
 export default ContextDataTable;

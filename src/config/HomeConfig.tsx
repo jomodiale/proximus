@@ -52,8 +52,8 @@ export const HeaderConfig = [
 
 
 export const HeroConfig = {
-    title  : 'Pre-order Now',
-    description : 'As of €349 with subscriptions',
+    title  : 'iPhone 14',
+    description : 'As of €147.93 with subscriptions',
     background : HeroImage2,
     buttonText : 'Let\'s go',
     onClickButtonRedirect : '/search',
@@ -66,7 +66,7 @@ export const MainRecommendationConfig : RecommendationType= {
   title : 'Recommendations',
   description : "Here are your personalized recommendations",
   numberOfResults: 6,
-  imageField : 'imag',
+  imageField : 'pic',
   pipeline : 'default',
   id : 'Recommendation'
 }

@@ -20,6 +20,10 @@ You can later set which facet to show in each Tab
 
 export const FacetConfig = [
   {
+    field: "concepts",
+    title: "Popular Topics",
+  },
+  {
     field: "source",
     title: "Source",
   },
@@ -27,10 +31,7 @@ export const FacetConfig = [
     field: "filetype",
     title: "File Type",
   },
-  {
-    field: "concepts",
-    title: "Concepts",
-  },{
+ {
     field : "mynav2b",
     title : "Focus Area"
   },{
@@ -168,7 +169,7 @@ export const SearchPageTabConfig : SearchPageTabConfigType[] = [
         imageField: 'ytthumbnailurl'
       }
     ],
-    facetToInclude: ["source", "filetype", "concepts",],
+    facetToInclude: ["concepts", "source", "filetype",],
   },
   {
     caption: "MyProximus",

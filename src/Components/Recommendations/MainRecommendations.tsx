@@ -11,7 +11,7 @@ import styled from "styled-components";
 import RecommendtionCard, {
   SkeletonRecommendtionCard,
 } from "./RecommendationCard";
-import SampleImage from "../../assets/sampleImages/recommendation.png";
+import SampleImage from "../../assets/sampleImages/recommendation.jpg";
 import { CustomContextContext } from "../CustomContext/CustomContextContext";
 import { MainRecommendationConfig } from "../../config/HomeConfig";
 

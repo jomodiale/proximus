@@ -78,7 +78,7 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 250px;
+  
   width: 100%;
   object-fit: cover;
   transition: 0.2s ease-in-out all;

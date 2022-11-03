@@ -175,10 +175,13 @@ const Wrapper = styled.header`
  `
 
 const Logo = styled.img`
-  margin-left: 130px;
+  margin-left: 80px;
   height: 50px;
   width: 150px;
   object-fit: contain;
+  @media only screen and (min-width: 1550px) {
+    margin-left: 200px;
+  }
 `;
 
 const LeftWrapper = styled.div`

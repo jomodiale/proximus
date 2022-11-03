@@ -22,9 +22,9 @@ export const InitialData = [
     context: [],
   },
   {
-    name: "Oliver Hansen",
-    email : "ohansen@coveo.com",
-    profile: "https://static.toiimg.com/photo/68944342.cms",
+    name: "Romelu Lukaku",
+    email : "rlukaku@coveo.com",
+    profile: "https://sortitoutsi.net/uploads/megapacks/cutoutfaces/originals/13.13/18007344.png",
     context: [
       {
         active: true,
@@ -41,10 +41,10 @@ export const InitialData = [
     ],
   },
   {
-    name: "Van Henery",
-    email : "vhenery@coveo.com",
+    name: "Justin Henin",
+    email : "jhenin@coveo.com",
     profile:
-      "https://englishtribuneimages.blob.core.windows.net/gallary-content/2022/3/2022_3$largeimg_1116021257.JPG",
+      "https://images0.persgroep.net/rcs/YekfnE4MpVFA0ZpRf6M6bDME32c/diocontent/216086869/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8",
     context: [
       {
         active: true,

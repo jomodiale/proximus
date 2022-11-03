@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@coveo/atomic-react": "^1.27.0",
     "@coveo/headless": "^1.66.3",
     "@coveo/search-token-server": "^1.29.2",
     "@coveord/platform-client": "^33.1.0",

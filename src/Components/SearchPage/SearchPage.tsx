@@ -23,6 +23,7 @@ import styled from 'styled-components'
 import { CustomContextContext } from "../CustomContext/CustomContextContext";
 import { DefaultSideBarRecommendationConfigType, SearchPageTabConfigType } from "../../config/Types/ConfigTypes";
 import NotifyTrigger from "./NotifyTrigger";
+// import {AtomicCategoryFacet} from "@coveo/atomic-react";
 
 interface ISearchPageProps {
   engine: SearchEngine;
@@ -83,6 +84,15 @@ const SearchPage: React.FunctionComponent<ISearchPageProps> = (props) => {
           <Grid container style={{ opacity: resultLoading ? "0.6" : "1" }}>
             
             <Grid item xs={9} md={3} sm={9}>
+            {/* <AtomicCategoryFacet
+              field="custurlnav"
+              label="Category"
+              field-id="CategoryFacet"
+              heading-level="3"
+              sortCriteria='occurrences'
+              delimitingCharacter="|"
+              withSearch={true}
+            ></AtomicCategoryFacet> */}
               <FacetList />
             </Grid>
 
